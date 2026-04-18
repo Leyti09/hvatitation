@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hvatitation</title>
+	<link rel="icon" type="image/x-icon" href="fav.png">
+    <link rel="stylesheet" href="styles.css">
+	<style>@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');</style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html">
+                <img class="logo" src="logo2.png" alt="hvatitation">
+            </a>
+			
+			<div class="split"></div>
+			
+			<div class="search-container">
+                <form action=".../../search.html" method="get">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit">🔎</button>
+                </form>
+            </div>
+			
+			<div class="split"></div>
+			
+            <ul class="menu">
+                <li><a href="upload.html">Submit</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+		
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Digital Art</a></li>
+                <li><a href="#">Traditional Art</a></li>
+                <li><a href="#">Photography</a></li>
+                <li><a href="#">Artisan Crafts</a></li>
+                <li><a href="#">Literature</a></li>
+                <li><a href="#">Comics & Cartoons</a></li>
+                <li><a href="#">Customizations</a></li>
+            </ul>
+        </aside>
+
+        <section class="gallery">
+            <div class="filter-tabs">
+                <button class="tab active" onclick="filterGallery('trending')">Trending</button>
+                <button class="tab" onclick="filterGallery('newest')">Newest</button>
+                <button class="tab" onclick="filterGallery('popular')">Popular</button>
+            </div>
+            <div id="gallery-content" class="grid-container">
+                <!-- art thumb placeholder -->
+                <div class="art-item trending">
+                    <a href="art.html">
+                        <img src="placeholder.jpg" alt="Art 1">
+                    </a>
+                    <p>Art Title 1</p>
+                </div>
+                <div class="art-item newest">
+                    <a href="art.html">
+                        <img src="placeholder.jpg" alt="Art 2">
+                    </a>
+                    <p>Art Title 2</p>
+                </div>
+                <div class="art-item popular">
+                    <a href="art.html">
+                        <img src="placeholder.jpg" alt="Art 3">
+                    </a>
+                    <p>Art Title 3</p>
+                </div>                
+                <!-- more art items -->
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Hvatitation</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<script>
+function filterGallery(filter) {
+    const allItems = document.querySelectorAll('.art-item');
+    allItems.forEach(item => {
+        if (filter === 'all' || item.classList.contains(filter)) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+    const tabs = document.querySelectorAll('.tab');
+    tabs.forEach(tab => {
+        tab.classList.remove('active');
+    });
+    document.querySelector(`.tab.${filter}`).classList.add('active');
+}
+</script>

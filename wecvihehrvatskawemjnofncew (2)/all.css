@@ -1,0 +1,16 @@
+:root {
+  font-family: Verdana;
+}
+
+.prevent-select {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.frame-display {
+  position: fixed;
+  top: 55px;
+  width: 180px;
+  height: -webkit-fill-available;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hvatitation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+        <a href="index.html">
+            <img class="logo" src="logo2.png" alt="hvatitation">
+        </a>
+            <ul class="menu">
+                <li><a href="upload.html">Submit</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <div class="search-container">
+                <form action=".../../search.html" method="get">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+    <div id="art" class="art">
+    <img id="art" src="image2.png">
+    <h3>Art</h3>
+    <button class="likefavdislikecomment">Like (???)</button>
+    <button class="likefavdislikecomment">Favorite (???)</button>
+    <button class="likefavdislikecomment">Dislike (???)</button>
+    <input type="text" id="comment" name="comment" placeholder="Comment here" style="margin-top: 5px">
+    </div>
+   </div>
+    <footer>
+        <p>&copy; 2024 Hvatitation</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<style>
+.container input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #1C3F4D;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.container input:focus {
+    border: 2px solid #00B5B5;
+    box-shadow: 0 0 10px rgba(0, 181, 181, 0.5);
+    outline: none;
+}
+</style>

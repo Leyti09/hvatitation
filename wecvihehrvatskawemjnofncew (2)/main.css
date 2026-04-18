@@ -1,0 +1,205 @@
+:root {
+    background: hsl(211 100% 4% / 1)
+}
+
+.menubar1 {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    margin: -8px 0px -8px -8px;
+    border-width: 0px;
+    border-bottom: 1px solid #0002;
+    position: fixed;
+}
+
+.noncollapseHeader {
+    padding: 5px 6px;
+    font: bold 10px verdana;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+a.cat-depth-0 {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 10.5px;
+    display: block;
+    padding: 4px 5px;
+    border-radius: 3px;
+    color: #fff7;
+}
+
+a.cat-depth-0:hover {
+    background: #fff2;
+    color: #fff;
+}
+
+.browse-container {
+    padding-top: 64px;
+    padding-inline: 12px;
+    width: 144px;
+    height: 100%;
+    background: #00102050;
+    position: fixed;
+}
+
+.usersettings {
+    fill: white;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: #0003;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 200ms;
+}
+
+.usersettings:hover {
+    background: #8090a050;
+}
+
+header.top_nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: calc(54px + 1px);
+    box-sizing: border-box;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    background: #001020;
+    z-index: 20;
+}
+
+span.logotext {
+    width: 120px;
+    height: 26px;
+    margin-top: 2.5px;
+    margin-left: -1.25px;
+    display: flex;
+    fill: #ffffff;
+}
+
+.split {
+    width: 1px;
+    height: 30px;
+    background: #fff3;
+    margin-inline: 14px 16px;
+}
+
+a.general-button {
+    font-size: 14px;
+    margin-inline: 2px;
+    border-radius: 6px;
+    padding: 8px;
+    transition: 200ms;
+}
+
+a.general-button:hover {
+    background: #fff3;
+}
+
+a.logo {
+    /* display: inline-flex; */
+    /* position: relative; */
+}
+
+.logo {
+    display: inline-flex;
+    position: relative;
+}
+
+.logo:hover {
+}
+
+form.search_bar {
+    width: 200px;
+    flex-shrink: 1;
+    border: 1px solid #ffffff30;
+    border-radius: 4px;
+    margin-right: 24px;
+    position: relative;
+}
+
+input#search-input {
+    margin-left: 8px;
+    color: #fff4;
+    font-size: 12.5px;
+    flex: 1;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    min-width: 20px;
+    font-family: Verdana;
+    background: transparent;
+}
+
+.search_border {
+    padding: 6px 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 2px;
+    cursor: text;
+}
+
+.menubar-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.user-profile {
+    display: flex;
+    position: relative;
+    padding: 12px 14px;
+    width: 30px;
+    height: 30px;
+    transition: 200ms;
+}
+
+.submit-button-layout {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    height: 54px;
+}
+
+span.search_icon {
+    fill: #fff;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+}
+
+.pfp img { 
+    border: 7px solid #000000;
+    border-radius: 25px;
+    width: 150px; /* Set width for the square */
+    height: 150px; /* Set height equal to width for a square */
+    max-width: 100%; /* Ensures it doesn’t exceed container */
+    margin-top: 10px;
+    position: relative;
+    top: -140px; /* Moves the image 140px up to overlap the banner */
+    margin-left: 25px;
+    z-index: 10;
+}
+
+.profile {
+    width: 100%; 
+    padding: 0; 
+    margin: 0;
+}
+
+.username {
+    position: absolute;
+    top: 42%;
+    left: 15%; 
+    font-size: 35px;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.99);
+}

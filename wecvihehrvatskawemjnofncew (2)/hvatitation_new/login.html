@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hvatitation</title>
+	<link rel="icon" type="image/x-icon" href="fav.png">
+    <link rel="stylesheet" href="styles.css">
+	<style>@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');</style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html">
+                <img class="logo" src="logo2.png" alt="hvatitation">
+            </a>
+			
+			<div class="split"></div>
+			
+			<div class="search-container">
+                <form action=".../../search.html" method="get">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit">🔎</button>
+                </form>
+            </div>
+			
+			<div class="split"></div>
+			
+            <ul class="menu">
+                <li><a href="upload.html">Submit</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+		
+    </header>
+    
+    <div class="container">
+        <section class="form-section">
+            <h2>Login</h2>
+            <form action="login_process.php" method="post">
+                <label for="username">Username or Email:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <div class="form-footer">
+                    <button type="submit">Login</button>
+                    <p class="account-text">Don't have an account? <a href="register.html">Register</a></p>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Hvatitation</p>
+    </footer>
+</body>
+</html>
